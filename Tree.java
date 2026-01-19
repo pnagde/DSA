@@ -6,9 +6,10 @@ import java.util.*;
 public class Tree {
 
     public static void main(String[] args) {
-        int[] preorder = {8,5,1,7,10,12};
-        TreeNode treeNode = bstFromPreorder(preorder);
-        preOrder(treeNode);
+        GoogleSearch search = new GoogleSearch();
+        search.insert("howare");
+        search.insert("home");
+        System.out.println(search.startsWith("ho"));
     }
 
     public static TreeNode bstFromPreorder(int[] preorder) {
